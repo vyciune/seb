@@ -1,14 +1,14 @@
-# Seb app
+# Seb applikacija
 
-uzeiti i seb-app
+Per terminalą užeiti į seb-app
 
-ivesti komanda `npm install`
+Įvesti komandą `npm install`
 
 Aplikacija paleidžiama komanda `ng serve`
 
 Applikacijos url `http://localhost:4200/`
 
-## Running unit tests
+## Testai
 
 Testai paleidžiami komanda `ng test`
 
