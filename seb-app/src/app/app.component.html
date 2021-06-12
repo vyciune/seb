@@ -1,0 +1,29 @@
+<div class="container">
+
+  <div class="input-checkbox">
+      <label>Are you a student?: </label>
+      <input class="input-field-checkbox" (change)="changes()" type="checkbox" [(ngModel)]="filter.student">
+  </div>
+
+  <div class="input-dropdown">
+    <label>What is your age: </label>
+    <select class="input-field-dropdown" (change)="changes()" [(ngModel)]="filter.age">
+      <option *ngFor="let age of ageValueList" [ngValue]="age">{{age}}</option>
+    </select>
+  </div>
+
+  <div class="input-dropdown">
+    <label>What is your income: </label>
+    <select class="input-field-dropdown" (change)="changes()" [(ngModel)]="filter.income">
+      <option *ngFor="let income of incomeValueList" [ngValue]="income">{{income}}</option>
+    </select>
+  </div>
+
+  <h2 class="input">Available products</h2>
+  <div class="product-container">
+    <div *ngFor="let product of productList" class="product">
+      <app-card [name]="product"></app-card>
+    </div>
+  </div>
+
+</div>

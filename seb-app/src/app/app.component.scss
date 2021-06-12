@@ -1,0 +1,45 @@
+$size-1: 1rem;
+
+.input {
+  padding: 0 $size-1 $size-1 $size-1;
+  text-align: center;
+}
+
+.input-field-dropdown {
+  font-size: $size-1;
+}
+
+.input-field-checkbox {
+  transform: scale(1.5);
+}
+
+.input-dropdown {
+  @extend .input;
+}
+
+.input-checkbox {
+  @extend .input;
+}
+
+.container {
+  margin-top: $size-1*1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.product-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product {
+  padding-right: 10px;
+}
+
+.product:last-child {
+  padding-right: 0 !important;
+}
